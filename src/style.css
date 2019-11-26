@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana;
+  background-image: url(http://www.msdeus.site/17909/Project-No-2/dist/imagenes/background_control.png);
+}
+
+.index{
+    background: #A8A8A8;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: #0F4BCA;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+img{
+    width: 775px; 
+    height: auto;
+    border-radius: 10px;
+    padding: 25px;
+    filter: saturate(180%);
+}
+
+.cambiarTamaño{
+    width: 50%;
+    height: 50%;
+}
+
+img:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    background: yellow;
+}
+
+.colorBase{
+    color: blanchedalmond;
+}
+button{
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+    background: #0F4BCA;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:hover{
+    background: yellow;
+}
+
+.animacionTitulo{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size:12px;
+    margin-top:200px;
+
+}
+
+.animacionTitulo:first-of-type{
+    animation: showup 7s infinite;
+}
+
+.animacionTitulo:last-of-type{
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.animacionTitulo:last-of-type{
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+/**
+p{
+    animation-duration: 4s;
+    animation-name: slidein;
+    font-size: 20px;
+    color: white;
+    font-family:Lato;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+*/
