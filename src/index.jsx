@@ -23,10 +23,11 @@ class App extends PureComponent {
   render() {
     return (
       <div className="index">
-        <Titulo/>
+        <Titulo />
+        <p>{this.state.message}</p>
         <div>
           <h2>HTML Only - Historia</h2>
-          <img alt="1" src='http://www.msdeus.site/17909/Project-No-2/dist/imagenes/Historia.png'/>
+          <img alt="1" src="http://www.msdeus.site/17909/Project-No-2/dist/imagenes/Historia.png" />
           <div>
             <a href="http://www.msdeus.site/17909/Lab-No-3/Main.html">
               <button type="button"> Ver Historia </button>
